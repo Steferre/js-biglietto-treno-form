@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Prezzo Biglietto</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <form class="form_container">
+            <div class="box">
+                <label for="">Nome Cognome</label><br>       
+                <input type="text" name="nomeCompleto" placeholder="nome e cognome">
+            </div>    
+            <div class="box">
+                <label for="">Km da percorrere</label><br>
+                <input type="text" name="nomeCompleto" placeholder="nome e cognome">
+            </div>
+            <div class="box">
+                <label for="">Fascia d'età</label><br>
+                <input list="categoriaEtà" name="categoriaEtà" placeholder="seleziona fascia d'età">
+                <datalist id="categoriaEtà">
+                    <option value="Minorenne"></option>
+                    <option value="Maggiorenne"></option>
+                    <option value="Over 65"></option>
+                </datalist>
+            </div>
+            <div class="btn_box">
+                <input type="submit" value="Genera">
+                <input type="reset" value="Annulla">
+            </div>    
+        </form>
+        <div class="ticketContainer">
+            <h2 class="title">il tuo biglietto</h2>
+            <div class="dataResume">
+                <h3 class="subtitle">dettaglio passeggeri</h3>
+                <div class="ticket">
+                    <div class="slot passengerName">
+                        <div class="up_side">
+                            <p>Passeggero</p>    
+                        </div>
+                        <div class="down_side">
+                            <p>FERRERA STEFANO</p>
+                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        </div>   
+                    </div>
+                    <div class="slot">
+                        <div class="up_side">
+                            <p>Offerta</p>
+                        </div>
+                        <div class="down_side">
+                            <p>Sconto Minorenne</p>
+                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        </div>    
+                    </div>
+                    <div class="slot">
+                        <div class="up_side">
+                            <p>Carrozza</p>
+                        </div>
+                        <div class="down_side">
+                            <p>7</p>
+                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        </div>    
+                    </div>
+                    <div class="slot">
+                        <div class="up_side">
+                            <p>Codice CP</p>
+                        </div>    
+                        <div class="down_side">
+                            <p>979228</p>
+                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        </div>
+                    </div>
+                    <div class="slot">
+                        <div class="up_side">
+                            <p>Costo Biglietto</p>
+                        </div>
+                        <div class="down_side">    
+                            <p>3.36 €</p>
+                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
