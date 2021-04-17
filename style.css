@@ -69,6 +69,7 @@
 .dataResume {
     background-color: #FFFFFF;
     padding: 20px 15px;
+    display: none;
 }
 
 .subtitle {

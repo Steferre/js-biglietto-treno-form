@@ -16,16 +16,16 @@
         <form class="form_container">
             <div class="box">
                 <label for="">Nome Cognome</label><br>       
-                <input type="text" name="nomeCompleto" placeholder="nome e cognome">
+                <input type="text" name="completeName" placeholder="nome e cognome">
             </div>    
             <div class="box">
                 <label for="">Km da percorrere</label><br>
-                <input type="text" name="nomeCompleto" placeholder="nome e cognome">
+                <input type="text" name="yourTrip" placeholder="quanti Km devi fare">
             </div>
             <div class="box">
                 <label for="">Fascia d'età</label><br>
-                <input list="categoriaEtà" name="categoriaEtà" placeholder="seleziona fascia d'età">
-                <datalist id="categoriaEtà">
+                <input list="ageRange" name="ageRange" placeholder="seleziona fascia d'età">
+                <datalist id="ageRange">
                     <option value="Minorenne"></option>
                     <option value="Maggiorenne"></option>
                     <option value="Over 65"></option>
@@ -38,16 +38,15 @@
         </form>
         <div class="ticketContainer">
             <h2 class="title">il tuo biglietto</h2>
-            <div class="dataResume">
+            <div class="dataResume" id="ticketData">
                 <h3 class="subtitle">dettaglio passeggeri</h3>
                 <div class="ticket">
                     <div class="slot passengerName">
                         <div class="up_side">
                             <p>Passeggero</p>    
                         </div>
-                        <div class="down_side">
-                            <p>FERRERA STEFANO</p>
-                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                        <div class="down_side">                          
+                            <p id="namePassenger"></p>
                         </div>   
                     </div>
                     <div class="slot">
@@ -55,8 +54,7 @@
                             <p>Offerta</p>
                         </div>
                         <div class="down_side">
-                            <p>Sconto Minorenne</p>
-                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                            <p id="offerPromo"></p>
                         </div>    
                     </div>
                     <div class="slot">
@@ -64,8 +62,7 @@
                             <p>Carrozza</p>
                         </div>
                         <div class="down_side">
-                            <p>7</p>
-                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                            <p id="trainCarriage"></p>
                         </div>    
                     </div>
                     <div class="slot">
@@ -73,8 +70,7 @@
                             <p>Codice CP</p>
                         </div>    
                         <div class="down_side">
-                            <p>979228</p>
-                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                            <p id="ticketCode"></p> 
                         </div>
                     </div>
                     <div class="slot">
@@ -82,8 +78,7 @@
                             <p>Costo Biglietto</p>
                         </div>
                         <div class="down_side">    
-                            <p>3.36 €</p>
-                            <!--<p id="userName"></p> verrà inserito tramite js-->
+                            <p id="ticketCost"></p>
                         </div>    
                     </div>
                 </div>
