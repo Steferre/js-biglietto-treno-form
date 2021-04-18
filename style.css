@@ -28,6 +28,7 @@
     padding-top: 20px;
     border-radius: 10px;
     background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px 5px #0000002c;
 }
 
 .box {
@@ -70,6 +71,7 @@
     background-color: #FFFFFF;
     padding: 20px 15px;
     display: none;
+    border-radius: 10px;
 }
 
 .subtitle {
@@ -92,6 +94,7 @@
 
 .slot.passengerName {
     background-color: #808080;
+    color: #FFFFFF;
 }
 
 .slot > .up_side {
